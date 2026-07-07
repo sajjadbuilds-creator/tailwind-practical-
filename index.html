@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="logo11.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col justify-between antialiased">
+
+    <header class="w-full bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between shadow-md"> 
+        <div class="flex items-center space-x-3">
+            <img class="h-10 w-10 rounded-full object-cover ring-2 ring-teal-500" src="logo11.png" alt="Logo">
+            <span class="text-xl font-bold tracking-tight text-white">Luna_Predebt</span>
+        </div> 
+
+        <nav class="flex items-center space-x-8 text-sm font-medium">  
+            <a href="home.html" class="inline-block text-slate-300 hover:-translate-y-0.5 hover:text-teal-400 transition-all duration-200">Home</a>
+            <a href="about.html" class="inline-block text-slate-300 hover:-translate-y-0.5 hover:text-teal-400 transition-all duration-200">About</a> 
+            <a href="projects.html" class="inline-block text-slate-300 hover:-translate-y-0.5 hover:text-teal-400 transition-all duration-200">Projects</a> 
+            <a href="contact.html" class="inline-block text-slate-300 hover:-translate-y-0.5 hover:text-teal-400 transition-all duration-200">Contact</a>
+        </nav>
+
+        <button class="bg-teal-600 hover:bg-teal-500 text-white text-sm font-semibold px-6 py-2.5 rounded-xl shadow-md active:scale-95 transition-all duration-200">
+            Hire me 
+        </button>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center py-16 px-4">
+        
+        <div class="text-center max-w-2xl mb-12">
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg text-slate-600 mb-2">I am a passionate developer with experience in building web applications and creating innovative solutions.</p>
+            <p class="text-base text-slate-500">Feel free to explore my projects and get in touch for collaboration or inquiries.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mb-16">
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 flex flex-col justify-between hover:shadow-xl hover:border-teal-500/20 transition-all duration-300 group">
+                <div>
+                    <div class="overflow-hidden rounded-xl mb-4">
+                        <img src="1000103022.jpg" alt="Project 1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors duration-200">Shadow Knight Concept Art</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">A full-body 2D character concept design featuring a dark, winged knight clad in intricate obsidian armor with glowing crimson accents. Perfect for dark fantasy gaming projects, virtual avatars, or high-detail character sheets.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 flex flex-col justify-between hover:shadow-xl hover:border-teal-500/20 transition-all duration-300 group">
+                <div>
+                    <div class="overflow-hidden rounded-xl mb-4">
+                        <img src="1000113659.jpg" alt="Project 2" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors duration-200">Custom VTuber Emotes</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">A collection of 10 stylized, high-energy character emotes tailored for streamers and content creators. Each expression is custom-designed to maximize audience engagement across platforms like Twitch, Discord, and YouTube.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 flex flex-col justify-between hover:shadow-xl hover:border-teal-500/20 transition-all duration-300 group">
+                <div>
+                    <div class="overflow-hidden rounded-xl mb-4">
+                        <img src="1000113660.jpg" alt="Project 3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors duration-200">2D Model & Sprite Sheet</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">A comprehensive production-ready character sheet detailing a full-body model alongside a modular breakdown of custom eye and helmet expression variants. Ideal for 2D game asset integration or Live2D rigging preparation.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="w-full max-w-md mx-auto p-8 bg-white rounded-2xl shadow-md border border-slate-200/80">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get in Touch</h2>
+              
+            <form action="thankyou.html" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all text-sm">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all text-sm">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all text-sm resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-xl shadow active:scale-[0.98] transition-all duration-200 text-sm mt-2">
+                    Submit Form
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="w-full bg-slate-900 border-t border-slate-800 py-10 px-6 text-slate-400">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center space-y-6 text-center">
+            
+            <div>
+                <span class="text-xl font-bold tracking-tight text-white">Luna_Predebt</span>
+            </div>
+
+            <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-medium">
+                <a href="home.html" class="hover:text-teal-400 transition-colors duration-200">Home</a>
+                <a href="about.html" class="hover:text-teal-400 transition-colors duration-200">About</a>
+                <a href="projects.html" class="hover:text-teal-400 transition-colors duration-200">Projects</a>
+                <a href="contact.html" class="hover:text-teal-400 transition-colors duration-200">Contact</a>
+            </nav>
+
+            <div class="flex justify-center space-x-6 text-sm font-medium">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-400 transition-colors duration-200">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-400 transition-colors duration-200">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-400 transition-colors duration-200">LinkedIn</a>
+            </div>
+
+            <div class="w-full max-w-xs pt-6 border-t border-slate-800 text-xs">
+                <p>&copy; 2026 Luna_Predebt. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
